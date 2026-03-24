@@ -715,3 +715,158 @@ body {
     width: 100%;
   }
 }
+
+/* =========================
+   MOBILE FIRST HERO
+========================= */
+@media (max-width: 700px) {
+
+  .hero {
+    padding: 16px 0 28px;
+    min-height: auto;
+  }
+
+  .topbar {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .topbar-btn {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+  }
+
+  /* 🔹 Layout pasa a vertical */
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* 🔹 H1 más usable */
+  .hero-left h1 {
+    font-size: 2.4rem;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+  }
+
+  .hero-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+
+  .eyebrow {
+    font-size: 0.7rem;
+    margin-bottom: 12px;
+  }
+
+  /* 🔹 Panel principal */
+  .hero-panel {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .panel-title {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  /* 🔹 Buscador más grande */
+  .search-box {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .search-box input {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .search-box button {
+    width: 100%;
+    padding: 14px;
+    font-size: 1rem;
+  }
+
+  /* 🔹 Chips */
+  .panel-actions {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  .chip {
+    padding: 10px 14px;
+    font-size: 0.85rem;
+  }
+
+  /* 🔹 Botones abajo */
+  .panel-bottom {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* 🔥 RESULTADOS */
+
+  .hero-right {
+    width: 100%;
+  }
+
+  .results-panel {
+    max-width: 100%;
+    height: auto;
+    max-height: none;
+    padding: 16px;
+  }
+
+  .results-header {
+    margin-bottom: 10px;
+  }
+
+  .results-title {
+    font-size: 1.2rem;
+  }
+
+  /* 🔹 Cards ocupan todo el ancho */
+  .commerce-strip {
+    gap: 14px;
+  }
+
+  .feed-card {
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .feed-image {
+    height: 180px;
+    border-radius: 16px;
+  }
+
+  .feed-actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .route-btn-large {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px;
+  }
+
+  .feed-copy p {
+    font-size: 0.9rem;
+  }
+
+  .info-item {
+    font-size: 0.82rem;
+  }
+
+}
