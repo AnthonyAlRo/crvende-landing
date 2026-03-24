@@ -342,6 +342,68 @@ body {
   flex-direction: column;
 }
 
+.results-header {
+  width: 100%;
+  padding: 4px 4px 18px;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.results-header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.results-header-copy {
+  width: 100%;
+}
+
+.results-line-wrap {
+  position: relative;
+  width: 100%;
+  padding-bottom: 14px;
+}
+
+.results-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9aa6c4;
+}
+
+.results-icon {
+  font-size: 0.8rem;
+  opacity: 0.9;
+}
+
+.results-line-wrap::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 2px;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    90deg,
+    var(--primary),
+    var(--primary-2),
+    rgba(139, 125, 255, 0.1)
+  );
+
+  box-shadow:
+    0 0 12px rgba(255, 122, 89, 0.4),
+    0 0 20px rgba(139, 125, 255, 0.25);
+}
+
 .commerce-strip {
   width: 100%;
   display: flex;
@@ -577,63 +639,6 @@ body {
     height: 620px;
   }
 
-  .results-header {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  padding: 4px 4px 14px;
-  margin-bottom: 14px;
-  flex-shrink: 0;
-}
-
-.results-header-main {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20;
-}
-
-.yolo {
-  margin-bottom: 70px;
-}
-
-.results-header-copy {
-  min-width: 0;
-}
-
-.results-label {
-  font-size: 0.72rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9aa6c4;
-  margin-bottom: 4px;
-}
-
-.results-title {
-  font-size: 1.15rem;
-  font-weight: 700;
-  color: #f5f7fb;
-  line-height: 1.15;
-}
-
-.results-count {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 46px;
-  height: 34px;
-  padding: 0 12px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: #dbe3f5;
-  font-size: 0.85rem;
-  font-weight: 700;
-  flex-shrink: 0;
-}
-
-
   .hero-text {
     font-size: 1.08rem;
   }
@@ -737,14 +742,12 @@ body {
     font-size: 0.8rem;
   }
 
-  /* 🔹 Layout pasa a vertical */
   .hero-layout {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  /* 🔹 H1 más usable */
   .hero-left h1 {
     font-size: 2.4rem;
     line-height: 1.05;
@@ -763,7 +766,6 @@ body {
     margin-bottom: 12px;
   }
 
-  /* 🔹 Panel principal */
   .hero-panel {
     padding: 18px;
     border-radius: 18px;
@@ -774,7 +776,6 @@ body {
     margin-bottom: 12px;
   }
 
-  /* 🔹 Buscador más grande */
   .search-box {
     flex-direction: column;
     gap: 8px;
@@ -792,7 +793,6 @@ body {
     font-size: 1rem;
   }
 
-  /* 🔹 Chips */
   .panel-actions {
     gap: 8px;
     margin-bottom: 16px;
@@ -803,7 +803,6 @@ body {
     font-size: 0.85rem;
   }
 
-  /* 🔹 Botones abajo */
   .panel-bottom {
     flex-direction: column;
     gap: 10px;
@@ -813,8 +812,6 @@ body {
     width: 100%;
     text-align: center;
   }
-
-  /* 🔥 RESULTADOS */
 
   .hero-right {
     width: 100%;
@@ -831,11 +828,6 @@ body {
     margin-bottom: 10px;
   }
 
-  .results-title {
-    font-size: 1.2rem;
-  }
-
-  /* 🔹 Cards ocupan todo el ancho */
   .commerce-strip {
     gap: 14px;
   }
@@ -868,5 +860,4 @@ body {
   .info-item {
     font-size: 0.82rem;
   }
-
 }
