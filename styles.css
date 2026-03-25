@@ -12,9 +12,9 @@
   --line: rgba(255, 255, 255, 0.08);
   --glass: rgba(255, 255, 255, 0.08);
   --glass-strong: rgba(255, 255, 255, 0.12);
-  --primary: #ff7a59;
-  --primary-2: #8b7dff;
-  --primary-3: #4fd1ff;
+  --primary: #d64545;   /* rojo CR */
+  --primary-2: #1f5eff; /* azul CR */
+  --primary-3: #f4f7fb; /* blanco suave */
   --shadow: 0 30px 80px rgba(0, 0, 0, 0.35);
 }
 
@@ -34,10 +34,10 @@ body {
   position: relative;
   min-height: 100vh;
   background:
-    radial-gradient(circle at 15% 80%, rgba(139, 125, 255, 0.28), transparent 28%),
-    radial-gradient(circle at 85% 80%, rgba(79, 209, 255, 0.28), transparent 24%),
-    radial-gradient(circle at 50% 100%, rgba(255, 122, 89, 0.16), transparent 20%),
-    linear-gradient(180deg, #040507 0%, #080a11 55%, #0a0d15 100%);
+    radial-gradient(circle at 14% 82%, rgba(31, 94, 255, 0.24), transparent 30%),
+    radial-gradient(circle at 84% 82%, rgba(214, 69, 69, 0.22), transparent 26%),
+    radial-gradient(circle at 52% 100%, rgba(244, 247, 251, 0.10), transparent 22%),
+    linear-gradient(180deg, #040507 0%, #070b14 52%, #0b1019 100%);
   overflow: hidden;
 }
 
@@ -53,9 +53,9 @@ body {
 .grid-overlay {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(120, 170, 255, 0.18) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(180, 205, 255, 0.14) 1px, transparent 1px);
   background-size: 18px 18px;
-  opacity: 0.28;
+  opacity: 0.24;
   pointer-events: none;
 }
 
@@ -72,7 +72,7 @@ body {
   height: 540px;
   left: -120px;
   bottom: -80px;
-  background: rgba(139, 125, 255, 0.55);
+  background: rgba(31, 94, 255, 0.42);
 }
 
 .glow-2 {
@@ -80,16 +80,16 @@ body {
   height: 520px;
   right: -120px;
   bottom: -90px;
-  background: rgba(79, 209, 255, 0.48);
+  background: rgba(214, 69, 69, 0.38);
 }
 
 .glow-3 {
-  width: 360px;
-  height: 360px;
+  width: 380px;
+  height: 380px;
   left: 50%;
   top: 58%;
   transform: translateX(-50%);
-  background: rgba(255, 122, 89, 0.14);
+  background: rgba(244, 247, 251, 0.10);
 }
 
 .cursor-glow {
