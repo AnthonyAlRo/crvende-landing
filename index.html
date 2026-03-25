@@ -32,8 +32,8 @@
         <div class="hero-left">
           <p class="eyebrow">CATÁLOGO DIGITAL DE NEGOCIOS EN COSTA RICA</p>
 
-          <h1> 
-            Comercio físico,<br>
+          <h1>
+            <span>Comercio físico,</span>
             visibilidad digital.
           </h1>
 
@@ -45,16 +45,55 @@
           <div class="hero-panel">
             <p class="panel-title">Encuentra lo que necesitas</p>
 
-            <div class="search-box">
-              <input type="text" placeholder="Ej: pizza, farmacia, dentista..." />
-              <button>Buscar</button>
+            <div class="search-box search-box-app">
+              <span class="search-icon">⌕</span>
+              <input type="text" placeholder="¿Qué estás buscando hoy?" />
             </div>
 
-            <div class="panel-actions">
-              <button class="chip active">Restaurantes</button>
-              <button class="chip">Farmacias</button>
-              <button class="chip">Tiendas</button>
-              <button class="chip">Servicios</button>
+            <div class="category-block">
+              <div class="category-head">
+                <p class="category-title">Categorías</p>
+                <a href="#" class="category-link">Ver todas</a>
+              </div>
+
+              <div class="category-grid">
+                <button class="category-card active" type="button">
+                  <span class="category-icon">🍽</span>
+                  <span class="category-name">Comida</span>
+                </button>
+
+                <button class="category-card" type="button">
+                  <span class="category-icon">👕</span>
+                  <span class="category-name">Moda</span>
+                </button>
+
+                <button class="category-card" type="button">
+                  <span class="category-icon">🛠</span>
+                  <span class="category-name">Servicios</span>
+                </button>
+
+                <button class="category-card" type="button">
+                  <span class="category-icon">💊</span>
+                  <span class="category-name">Salud</span>
+                </button>
+
+                <button class="category-card" type="button">
+                  <span class="category-icon">🛍</span>
+                  <span class="category-name">Insumos</span>
+                </button>
+
+                <button class="category-card" type="button">
+                  <span class="category-icon">🏋</span>
+                  <span class="category-name">Gimnasio</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="distance-row">
+              <button class="distance-chip active" type="button">Cerca de mi</button>
+              <button class="distance-chip" type="button">5 km</button>
+              <button class="distance-chip" type="button">10 km</button>
+              <button class="distance-chip" type="button">20 km</button>
             </div>
 
             <div class="panel-bottom">
@@ -64,164 +103,161 @@
           </div>
         </div>
 
-  <!-- DERECHA -->
-  <div class="hero-right">
-  <div class="results-panel">
-       
-    <div class="results-header">
-    <div class="results-header-main">
+        <!-- DERECHA -->
+        <div class="hero-right">
+          <div class="results-panel">
 
-    <div class="results-header-copy">
-    <div class="results-line-wrap">
-      <p class="results-label">
-      <span class="results-icon">⚲</span>
-      Resultados cerca de ti
-      </p>
-    </div> 
-    </div>
-    
-  </div>
-</div>
+            <div class="results-header">
+              <div class="results-header-main">
+                <div class="results-header-copy">
+                  <div class="results-line-wrap">
+                    <p class="results-label">
+                      <span class="results-icon">⚲</span>
+                      Resultados cerca de ti
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="commerce-strip">
 
-  <!-- CARD 1 -->
-  <article class="commerce-card feed-card">
-  <div class="feed-head">
-    <div class="feed-brand">
-      <div class="feed-logo">☕</div>
-      <div class="feed-brand-text">
-        <h3>Café Central</h3>
-        <p>A 1.2 km · Abierto ahora</p>
-      </div>
-    </div>
+              <!-- CARD 1 -->
+              <article class="commerce-card feed-card">
+                <div class="feed-head">
+                  <div class="feed-brand">
+                    <div class="feed-logo">☕</div>
+                    <div class="feed-brand-text">
+                      <h3>Café Central</h3>
+                      <p>A 1.2 km · Abierto ahora</p>
+                    </div>
+                  </div>
 
-    <button class="feed-menu" aria-label="Más opciones">•••</button>
-  </div>
+                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
+                </div>
 
-  <div class="feed-image" style="background-image: url('https://pymstatic.com/30549/conversions/tipos-de-cafe-wide_webp.webp');"></div>
+                <div class="feed-image" style="background-image: url('https://pymstatic.com/30549/conversions/tipos-de-cafe-wide_webp.webp');"></div>
 
-  <div class="feed-actions">
-    <div class="feed-stats">
-      <span class="feed-like">❤</span>
-      <span>86</span>
-    </div>
+                <div class="feed-actions">
+                  <div class="feed-stats">
+                    <span class="feed-like">❤</span>
+                    <span>86</span>
+                  </div>
+                </div>
 
-    <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-  </div>
+                <div class="feed-copy">
+                  <p>
+                    <strong>Café Central</strong> Empieza tu mañana con café recién hecho,
+                    desayunos y repostería artesanal.
+                  </p>
 
-  <div class="feed-copy">
-    <p>
-      <strong>Café Central</strong> Empieza tu mañana con café recién hecho,
-      desayunos y repostería artesanal.
-    </p>
+                  <div class="feed-meta">
+                    <span class="info-item">
+                      <span class="info-icon">📆</span>
+                      Lun - Sáb · 7:00 AM - 8:00 PM
+                    </span>
 
-    <div class="feed-meta">
-      <span class="info-item">
-        <span class="info-icon">📆</span>
-        Lun - Sáb · 7:00 AM - 8:00 PM
-      </span>
+                    <span class="info-item">
+                      <span class="whatsapp">✆</span>
+                      8346-3344
+                    </span>
+                  </div>
 
-      <span class="info-item">
-        <span class="whatsapp">✆</span>
-        8346-3344
-      </span>
-    </div>
-  </div>
-  </article>
+                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
+                </div>
+              </article>
 
-  <!-- CARD 2 -->
-  <article class="commerce-card feed-card">
-  <div class="feed-head">
-    <div class="feed-brand">
-      <div class="feed-logo">👕</div>
-      <div class="feed-brand-text">
-        <h3>Moda Urbana</h3>
-        <p>A 2.0 km · Promo activa</p>
-      </div>
-    </div>
+              <!-- CARD 2 -->
+              <article class="commerce-card feed-card">
+                <div class="feed-head">
+                  <div class="feed-brand">
+                    <div class="feed-logo">👕</div>
+                    <div class="feed-brand-text">
+                      <h3>Moda Urbana</h3>
+                      <p>A 2.0 km · Promo activa</p>
+                    </div>
+                  </div>
 
-    <button class="feed-menu" aria-label="Más opciones">•••</button>
-  </div>
+                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
+                </div>
 
-  <div class="feed-image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1a/00/16/14/tienda-de-ropa-urbana.jpg');"></div>
+                <div class="feed-image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1a/00/16/14/tienda-de-ropa-urbana.jpg');"></div>
 
-  <div class="feed-actions">
-    <div class="feed-stats">
-      <span class="feed-like">❤</span>
-      <span>154</span>
-    </div>
+                <div class="feed-actions">
+                  <div class="feed-stats">
+                    <span class="feed-like">❤</span>
+                    <span>154</span>
+                  </div>
+                </div>
 
-    <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-  </div>
+                <div class="feed-copy">
+                  <p>
+                    <strong>Moda Urbana</strong> Nueva colección disponible con accesorios
+                    y promociones especiales por tiempo limitado.
+                  </p>
 
-  <div class="feed-copy">
-    <p>
-      <strong>Moda Urbana</strong> Nueva colección disponible con accesorios
-      y promociones especiales por tiempo limitado.
-    </p>
+                  <div class="feed-meta">
+                    <span class="info-item">
+                      <span class="info-icon">📆</span>
+                      Lun - Dom · 10:00 AM - 7:00 PM
+                    </span>
 
-    <div class="feed-meta">
-      <span class="info-item">
-        <span class="info-icon">📆</span>
-        Lun - Dom · 10:00 AM - 7:00 PM
-      </span>
+                    <span class="info-item">
+                      <span class="whatsapp">✆</span>
+                      7536-1100
+                    </span>
+                  </div>
 
-      <span class="info-item">
-        <span class="whatsapp">✆</span>
-        7536-1100
-      </span>
-    </div>
-  </div>
-</article>
+                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
+                </div>
+              </article>
 
-  <!-- CARD 3 -->
-  <article class="commerce-card feed-card">
-  <div class="feed-head">
-    <div class="feed-brand">
-      <div class="feed-logo">💊</div>
-      <div class="feed-brand-text">
-        <h3>Farmacia Plus</h3>
-        <p>A 0.8 km · 24 horas</p>
-      </div>
-    </div>
+              <!-- CARD 3 -->
+              <article class="commerce-card feed-card">
+                <div class="feed-head">
+                  <div class="feed-brand">
+                    <div class="feed-logo">💊</div>
+                    <div class="feed-brand-text">
+                      <h3>Farmacia Plus</h3>
+                      <p>A 0.8 km · 24 horas</p>
+                    </div>
+                  </div>
 
-    <button class="feed-menu" aria-label="Más opciones">•••</button>
-  </div>
+                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
+                </div>
 
-  <div class="feed-image" style="background-image: url('https://extendeal.com/hubfs/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg');"></div>
+                <div class="feed-image" style="background-image: url('https://extendeal.com/hubfs/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg');"></div>
 
-  <div class="feed-actions">
-    <div class="feed-stats">
-      <span class="feed-like">❤</span>
-      <span>63</span>
-    </div>
+                <div class="feed-actions">
+                  <div class="feed-stats">
+                    <span class="feed-like">❤</span>
+                    <span>63</span>
+                  </div>
+                </div>
 
-    <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-  </div>
+                <div class="feed-copy">
+                  <p>
+                    <strong>Farmacia Plus</strong> Atención rápida, productos de cuidado
+                    personal y servicio continuo durante todo el día.
+                  </p>
 
-  <div class="feed-copy">
-    <p>
-      <strong>Farmacia Plus</strong> Atención rápida, productos de cuidado
-      personal y servicio continuo durante todo el día.
-    </p>
+                  <div class="feed-meta">
+                    <span class="info-item">
+                      <span class="info-icon">📆</span>
+                      Abierto 24 horas
+                    </span>
 
-    <div class="feed-meta">
-      <span class="info-item">
-        <span class="info-icon">📆</span>
-        Abierto 24 horas
-      </span>
+                    <span class="info-item">
+                      <span class="whatsapp">✆</span>
+                      8444-8899
+                    </span>
+                  </div>
 
-      <span class="info-item">
-        <span class="whatsapp">✆</span>
-        8444-8899
-      </span>
-    </div>
-  </div>
-</article>
+                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
+                </div>
+              </article>
 
             </div>
-
           </div>
         </div>
 
