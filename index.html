@@ -1,310 +1,85 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es-CR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CRvende</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#009e95">
+  <meta name="description" content="Tu negocio merece que lo encuentren. CRvende prepara un espacio digital para los comercios físicos de toda Costa Rica. Lanzamiento previsto para 2027.">
+  <title>CRvende · Tu negocio merece que lo encuentren</title>
+  <link rel="icon" href="assets/brand/crvende-isotipo.png" type="image/png">
+  <link rel="stylesheet" href="css/styles.css?v=5">
+  <script src="js/main.js?v=5" defer></script>
 </head>
-
 <body>
-  <div class="page-bg">
-    <canvas id="particles"></canvas>
-    <div class="grid-overlay"></div>
-    <div class="glow glow-1"></div>
-    <div class="glow glow-2"></div>
-    <div class="glow glow-3"></div>
-    <div class="cursor-glow"></div>
-
-    <header class="hero">
-      <nav class="topbar">
-        <div class="brand-wrap">
-          <span class="brand">CRvende</span>
-          <span class="brand-badge">beta</span>
-        </div>
-
-        <a href="#" class="topbar-btn">Registrar negocio</a>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header">
+    <div class="container nav">
+      <a class="brand" href="#inicio" aria-label="CRvende, inicio"><img src="assets/brand/crvende-logo.png" alt="CRvende" width="2172" height="724"></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav id="navigation" aria-label="Principal">
+        <a href="#negocios">Para tu negocio</a><a href="#tu-espacio">Un primer vistazo</a><a href="#como-funciona">La experiencia</a>
+        <a href="#sumate" class="button button-small" data-interest="negocio">Quiero ser parte <span aria-hidden="true">↗</span></a>
       </nav>
-
-      <section class="hero-layout">
-
-        <!-- IZQUIERDA -->
-        <div class="hero-left">
-          <p class="eyebrow">CATÁLOGO DIGITAL DE NEGOCIOS EN COSTA RICA</p>
-
-          <h1>
-            <span>Comercio físico,</span>
-            visibilidad digital.
-          </h1>
-
-          <p class="hero-text">
-            Descubre negocios, encuentra información actualizada.
-            Dale a tu local una presencia digital clara, moderna y fácil de encontrar.
-          </p>
-
-          <div class="hero-panel">
-            <p class="panel-title">Encuentra lo que necesitas</p>
-
-            <div class="search-box search-box-app">
-              
-              <input type="text" placeholder="¿Qué estás buscando hoy?" />
-            </div>
-
-            <div class="category-block">
-              <div class="category-head">
-                <p class="category-title">Categorías</p>
-                <a href="#" class="category-link">Ver todas</a>
-              </div>
-
-              <div class="category-grid">
-                <button class="category-card active" type="button">
-                  <span class="category-icon">🍽</span>
-                  <span class="category-name">Comida</span>
-                </button>
-
-                <button class="category-card" type="button">
-                  <span class="category-icon">👕</span>
-                  <span class="category-name">Moda</span>
-                </button>
-
-                <button class="category-card" type="button">
-                  <span class="category-icon">🛠</span>
-                  <span class="category-name">Servicios</span>
-                </button>
-
-                <button class="category-card" type="button">
-                  <span class="category-icon">💊</span>
-                  <span class="category-name">Salud</span>
-                </button>
-
-                <button class="category-card" type="button">
-                  <span class="category-icon">🛍</span>
-                  <span class="category-name">Insumos</span>
-                </button>
-
-                <button class="category-card" type="button">
-                  <span class="category-icon">🏋</span>
-                  <span class="category-name">Gimnasio</span>
-                </button>
-              </div>
-            </div>
-
-            <div class="distance-row">
-              <button class="distance-chip active" type="button">Cerca de mi</button>
-              <button class="distance-chip" type="button">5 km</button>
-              <button class="distance-chip" type="button">10 km</button>
-              <button class="distance-chip" type="button">20 km</button>
-            </div>
-
-            <div class="panel-bottom">
-              <a href="#" class="hero-btn solid">Registrar mi negocio</a>
-              <a href="#" class="hero-btn ghost">Cómo funciona</a>
-            </div>
-          </div>
+    </div>
+  </header>
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> UN CATÁLOGO DIGITAL. NEGOCIOS DE COSTA RICA.</p>
+          <h1>Tu negocio<br>merece que<br><em>lo encuentren.</em></h1>
+          <p class="hero-description">Estamos creando un catálogo digital de comercios físicos de Costa Rica. Un espacio para mostrar tu local y conectar con quienes buscan lo que ofrecés.</p>
+          <div class="hero-actions"><a class="button" href="#sumate" data-interest="negocio">Quiero ser parte <span aria-hidden="true">↗</span></a><a class="text-link" href="#tu-espacio">Dame un primer vistazo <span aria-hidden="true">→</span></a></div>
+          <p class="launch-note">Fecha de lanzamiento: 2027</p>
         </div>
-
-        <!-- DERECHA -->
-        <div class="hero-right">
-          <div class="results-panel">
-
-            <div class="results-header">
-              <div class="results-header-main">
-                <div class="results-header-copy">
-                  <div class="results-line-wrap">
-                    <p class="results-label">
-                      <span class="results-icon">⚲</span>
-                      Resultados cerca de ti
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="commerce-strip">
-
-              <!-- CARD 1 -->
-              <article class="commerce-card feed-card">
-                <div class="feed-head">
-                  <div class="feed-brand">
-                    <div class="feed-logo">☕</div>
-                    <div class="feed-brand-text">
-                      <h3>Café Central</h3>
-                      <p>A 1.2 km · Abierto ahora</p>
-                    </div>
-                  </div>
-
-                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
-                </div>
-
-                <div class="feed-image" style="background-image: url('https://pymstatic.com/30549/conversions/tipos-de-cafe-wide_webp.webp');"></div>
-
-                <div class="feed-actions">
-                  <div class="feed-stats">
-                    <span class="feed-like">❤</span>
-                    <span>86</span>
-                  </div>
-                </div>
-
-                <div class="feed-copy">
-                  <p>
-                    <strong>Café Central</strong> Empieza tu mañana con café recién hecho,
-                    desayunos y repostería artesanal.
-                  </p>
-
-                  <div class="feed-meta">
-                    <span class="info-item">
-                      <span class="info-icon">🕓</span>
-                      Lun - Sáb · 7:00 AM - 8:00 PM
-                    </span>
-
-                    <span class="info-item">
-                      <span class="whatsapp">✆</span>
-                      8346-3344
-                    </span>
-                  </div>
-
-                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-                </div>
-              </article>
-
-              <!-- CARD 2 -->
-              <article class="commerce-card feed-card">
-                <div class="feed-head">
-                  <div class="feed-brand">
-                    <div class="feed-logo">👕</div>
-                    <div class="feed-brand-text">
-                      <h3>Moda Urbana</h3>
-                      <p>A 2.0 km · Promo activa</p>
-                    </div>
-                  </div>
-
-                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
-                </div>
-
-                <div class="feed-image" style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/1a/00/16/14/tienda-de-ropa-urbana.jpg');"></div>
-
-                <div class="feed-actions">
-                  <div class="feed-stats">
-                    <span class="feed-like">❤</span>
-                    <span>154</span>
-                  </div>
-                </div>
-
-                <div class="feed-copy">
-                  <p>
-                    <strong>Moda Urbana</strong> Nueva colección disponible con accesorios
-                    y promociones especiales por tiempo limitado.
-                  </p>
-
-                  <div class="feed-meta">
-                    <span class="info-item">
-                      <span class="info-icon">🕓</span>
-                      Lun - Dom · 10:00 AM - 7:00 PM
-                    </span>
-
-                    <span class="info-item">
-                      <span class="whatsapp">✆</span>
-                      7536-1100
-                    </span>
-                  </div>
-
-                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-                </div>
-              </article>
-
-              <!-- CARD 3 -->
-              <article class="commerce-card feed-card">
-                <div class="feed-head">
-                  <div class="feed-brand">
-                    <div class="feed-logo">💊</div>
-                    <div class="feed-brand-text">
-                      <h3>Farmacia Plus</h3>
-                      <p>A 0.8 km · 24 horas</p>
-                    </div>
-                  </div>
-
-                  <button class="feed-menu" aria-label="Más opciones" type="button">•••</button>
-                </div>
-
-                <div class="feed-image" style="background-image: url('https://extendeal.com/hubfs/young-hispanic-woman-pharmacist-smiling-confident-standing-with-arms-crossed-gesture-pharmacy.jpg');"></div>
-
-                <div class="feed-actions">
-                  <div class="feed-stats">
-                    <span class="feed-like">❤</span>
-                    <span>63</span>
-                  </div>
-                </div>
-
-                <div class="feed-copy">
-                  <p>
-                    <strong>Farmacia Plus</strong> Atención rápida, productos de cuidado
-                    personal y servicio continuo durante todo el día.
-                  </p>
-
-                  <div class="feed-meta">
-                    <span class="info-item">
-                      <span class="info-icon">🕓</span>
-                      Abierto 24 horas
-                    </span>
-
-                    <span class="info-item">
-                      <span class="whatsapp">✆</span>
-                      8444-8899
-                    </span>
-                  </div>
-
-                  <a href="#" class="route-btn route-btn-large">Cómo llegar</a>
-                </div>
-              </article>
-
-            </div>
-          </div>
+        <div class="hero-catalog" aria-label="Muestra conceptual de un catálogo de negocios">
+          <div class="catalog-heading"><span><i class="catalog-dot"></i> Un país por descubrir</span><small>COSTA RICA</small></div>
+          <article class="catalog-feature"><header class="business-card-header"><span class="business-avatar avatar-cafe" aria-hidden="true">CE</span><div><h3>Café de la Esquina</h3><p>Cafetería · Comercio de ejemplo</p></div></header><div class="catalog-image"><img src="assets/images/local-cafeteria-conceptual.png" alt="Interior ilustrativo de una cafetería, con mostrador y estantes visibles" width="1536" height="1024" fetchpriority="high"></div><div class="catalog-feature-info"><p>Un cafecito. Una buena pausa.</p><button type="button" class="directions-button" data-directions="Café de la Esquina" aria-label="Cómo llegar a Café de la Esquina, ejemplo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m20 4-6 16-3-7-7-3 16-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Cómo llegar</button></div></article>
+          <div class="catalog-mini-grid"><article class="catalog-mini"><header class="business-card-header"><span class="business-avatar avatar-tienda" aria-hidden="true">EL</span><div><h3>Estilo Local</h3><p>Ropa y accesorios</p></div></header><img src="assets/images/local-tienda-conceptual-v2.png" alt="Imagen ilustrativa de una tienda de ropa vista desde el pasillo de un centro comercial" width="1536" height="1024"><div class="mini-directions"><button type="button" class="directions-button" data-directions="Estilo Local" aria-label="Cómo llegar a Estilo Local, ejemplo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m20 4-6 16-3-7-7-3 16-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Cómo llegar</button></div></article><article class="catalog-mini"><header class="business-card-header"><span class="business-avatar avatar-ferreteria" aria-hidden="true">FC</span><div><h3>Ferretería Central</h3><p>Hogar y ferretería</p></div></header><img src="assets/images/local-ferreteria-conceptual-v2.png" alt="Imagen ilustrativa de una ferretería con sus estantes y mostrador" width="1536" height="1024"><div class="mini-directions"><button type="button" class="directions-button" data-directions="Ferretería Central" aria-label="Cómo llegar a Ferretería Central, ejemplo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m20 4-6 16-3-7-7-3 16-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Cómo llegar</button></div></article></div>
+          <p class="catalog-caption">Muestra conceptual · Comercios ficticios e imágenes ilustrativas generadas.</p>
         </div>
-
-      </section>
-    </header>
-  </div>
-
-  <script>
-    const glow = document.querySelector(".cursor-glow");
-
-    window.addEventListener("mousemove", (e) => {
-      const x = e.clientX;
-      const y = e.clientY;
-
-      glow.style.left = x + "px";
-      glow.style.top = y + "px";
-
-      createParticle(x, y);
-    });
-
-    function createParticle(x, y) {
-      const particle = document.createElement("div");
-      particle.classList.add("particle");
-
-      const colors = [
-        "rgba(255, 122, 89, 0.9)",
-        "rgba(139, 125, 255, 0.9)",
-        "rgba(79, 209, 255, 0.9)",
-        "rgba(255, 255, 255, 0.7)"
-      ];
-
-      particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-
-      const size = Math.random() * 6 + 4;
-      particle.style.width = size + "px";
-      particle.style.height = size + "px";
-
-      particle.style.left = x + "px";
-      particle.style.top = y + "px";
-
-      document.body.appendChild(particle);
-
-      setTimeout(() => {
-        particle.remove();
-      }, 600);
-    }
-  </script>
-
+      </div>
+      <div class="container hero-bottom"><span>Un país. Siete provincias. Mucho por descubrir.</span><a href="#negocios">Conocé lo que viene <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section id="negocios" class="section business-first"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow">TENÉS UN LOCAL. TENÉS UNA HISTORIA.</p><h2>Que encontrarte<br>no sea <em>lo difícil.</em></h2></div><p>Una dirección que cambió. Un teléfono viejo. Fotos que ya no muestran lo que sos. Tu presencia digital debería estar a la altura de tu negocio.</p></div>
+      <div class="business-benefits">
+        <article><span class="benefit-index">01 / PRESENCIA</span><h3>Un espacio<br>que sea tuyo.</h3><p>Una página para presentar tu comercio, mostrar lo que ofrecés y reunir tu información en un solo lugar.</p></article>
+        <article><span class="benefit-index">02 / CONFIANZA</span><h3>Lo que ven,<br>es lo que hay.</h3><p>Fotos recientes, horarios claros y tus medios de contacto al día. Que te conozcan antes de visitarte.</p></article>
+        <article><span class="benefit-index">03 / ENCUENTROS</span><h3>Más cerca de<br>tu próximo cliente.</h3><p>Queremos conectar tu local con personas que buscan comercios como el tuyo en Costa Rica.</p></article>
+      </div>
+      <div class="national-note"><p>En el barrio, en el centro o dentro de un centro comercial.<br><strong>Si tenés un local físico en Costa Rica, esto también es para vos.</strong></p><span class="national-tag">100% COSTA RICA</span></div>
+    </div></section>
+    <section id="tu-espacio" class="section profile-preview"><div class="container preview-layout">
+      <div class="preview-copy"><p class="eyebrow">UN POQUITO DE LO QUE VIENE</p><h2>Una mirada<br>desde <em>tu puerta.</em></h2><p>Que alguien pueda asomarse a tu local, reconocer lo que ofrecés y decidir visitarte. Estamos preparando tu espacio digital para hacer ese primer encuentro más sencillo.</p><ul class="merchant-benefits"><li>Fotos de tu espacio, tus estantes y lo que ofrecés.</li><li>Horarios actualizados y la información que tus clientes necesitan.</li><li>Tu contacto y cómo llegar, en un mismo lugar.</li></ul><p class="preview-footnote">Un primer vistazo. Compartiremos más novedades conforme nos acerquemos al lanzamiento.</p><a class="text-link" href="#sumate" data-interest="negocio">Quiero seguir las novedades <span aria-hidden="true">→</span></a></div>
+      <div class="profile-stage"><div class="profile-browser"><span></span><span></span><span></span><p>Tu espacio en CRvende</p></div><div class="profile-demo">
+        <div class="profile-cover"><img src="assets/images/local-cafeteria-conceptual.png" alt="Imagen ilustrativa generada de una cafetería ficticia, vista desde su puerta, con mostrador y estantes" width="1536" height="1024" loading="lazy"><span>Un vistazo a tu próximo lugar favorito.</span></div>
+        <div class="profile-identity"><div class="profile-avatar avatar-cafe" aria-hidden="true">CE</div><div><span class="demo-tag">COMERCIO DE EJEMPLO</span><h3>Café de la Esquina</h3><p>Café, historias y algo recién horneado.</p></div></div>
+        <div class="profile-primary-action"><button type="button" class="directions-button" data-directions="Café de la Esquina" aria-label="Cómo llegar a Café de la Esquina desde el perfil, ejemplo"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="m20 4-6 16-3-7-7-3 16-6Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Cómo llegar</button><span>Conocé el lugar. Encontrá su puerta.</span></div>
+        <div class="profile-tabs" role="tablist" aria-label="Vista conceptual del perfil"><button type="button" id="tab-info" role="tab" aria-selected="true" aria-controls="panel-info" tabindex="0">El local</button><button type="button" id="tab-fotos" role="tab" aria-selected="false" aria-controls="panel-fotos" tabindex="-1">Fotos</button><button type="button" id="tab-visita" role="tab" aria-selected="false" aria-controls="panel-visita" tabindex="-1">Ubicación y contacto</button></div>
+        <div id="panel-info" class="profile-panel" role="tabpanel" aria-labelledby="tab-info"><p class="demo-panel-title">Un lugar para hacer una pausa.</p><p>Buen café, algo recién horneado y un espacio para quedarse un ratito.</p><div class="profile-info-chips"><span>Cafetería</span><span>Panadería</span><span>Comercio local</span></div><article class="sample-post"><img src="assets/images/local-cafeteria-conceptual.png" alt="Mostrador de la cafetería ficticia, imagen ilustrativa" width="1536" height="1024" loading="lazy"><div><span>PUBLICACIÓN DE EJEMPLO</span><h4>Siempre hay algo nuevo.</h4><p>Un vistazo a lo que hoy te espera en nuestro local.</p></div></article></div>
+        <div id="panel-fotos" class="profile-panel" role="tabpanel" aria-labelledby="tab-fotos" hidden><div class="demo-photo-grid"><figure><img src="assets/images/local-cafeteria-conceptual.png" alt="Vista ilustrativa del interior del local" loading="lazy" width="1536" height="1024"><figcaption>El espacio</figcaption></figure><figure><img class="shelves-crop" src="assets/images/local-cafeteria-conceptual.png" alt="Detalle de los estantes en la misma imagen ilustrativa" loading="lazy" width="1536" height="1024"><figcaption>Los estantes</figcaption></figure></div><p>Un vistazo al espacio, sus estantes y lo que te espera al entrar.</p></div>
+        <div id="panel-visita" class="profile-panel" role="tabpanel" aria-labelledby="tab-visita" hidden><ul class="demo-visit"><li><span aria-hidden="true">◷</span><div><strong>Tus horarios y tu menú</strong><small>Cuándo visitarte y qué ofrecés, si aplica.</small></div></li><li><span aria-hidden="true">⌖</span><div><strong>Tu ubicación y cómo llegar</strong><small>Desde donde están hasta la puerta de tu local.</small></div></li><li><span aria-hidden="true">↗</span><div><strong>Tu contacto y redes</strong><small>Para seguir la conversación.</small></div></li></ul></div>
+      </div><p class="profile-disclaimer">Vista conceptual. Comercio ficticio e imagen generada como ilustración. El diseño final puede cambiar.</p></div>
+    </div></section>
+    <section id="como-funciona" class="section how"><div class="container how-layout"><div class="how-intro"><p class="eyebrow">DE LA PANTALLA A TU BARRIO</p><h2>Encontralo aquí.<br><em>Vivilo allá.</em></h2><p>Una forma sencilla de encontrar la tienda que andabas buscando, conocerla un poquito y saber cómo llegar.</p></div><ol class="steps"><li><span>01</span><div><h3>Encontrá el lugar que buscabas</h3><p>Queremos que descubrir comercios físicos de Costa Rica sea sencillo, desde un mismo espacio.</p></div></li><li><span>02</span><div><h3>Asomate antes de salir</h3><p>Conocé el espacio y sus estantes a través de fotos actuales. Revisá horarios, contacto y menú cuando corresponda.</p></div></li><li><span>03</span><div><h3>Sabé cómo llegar</h3><p>Desde el local de tu barrio hasta esa tienda dentro de un centro comercial. La experiencia continúa al cruzar su puerta.</p></div></li></ol></div></section>
+    <section class="section launch-section"><div class="container launch-panel"><div><p class="eyebrow">ESTO APENAS ESTÁ EMPEZANDO</p><h2>Una nueva forma de<br>encontrarnos. <em>Muy pronto.</em></h2><p>Estamos construyendo CRvende para todo el país. En el camino iremos compartiendo pequeños adelantos de lo que viene.</p></div><div class="launch-date"><strong>2027</strong><a class="text-link" href="#sumate">Quiero ser parte <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section faq-section"><div class="container faq-layout"><div><p class="eyebrow">ANTES DE EMPEZAR</p><h2>Hablemos<br><em>claro.</em></h2></div><div class="faq"><details><summary>¿Para cuáles negocios es CRvende?<span aria-hidden="true">+</span></summary><p>Para comercios físicos de Costa Rica que quieren que su presencia en internet esté a la altura de lo que ofrecen. CRvende le dará a cada negocio un espacio web con identidad propia, donde sus clientes podrán conocer el local, descubrir su oferta y encontrar la información que necesitan para visitarlo.</p></details><details><summary>¿En cuáles zonas estará disponible?<span aria-hidden="true">+</span></summary><p>La propuesta es nacional: San José, Alajuela, Cartago, Heredia, Guanacaste, Puntarenas y Limón.</p></details><details><summary>¿Cómo me pondré en contacto con un comercio?<span aria-hidden="true">+</span></summary><p>Podrás encontrar sus medios de contacto y redes en su espacio de CRvende, para conversar directamente con el negocio.</p></details><details><summary>¿Anotarme ya inscribe mi negocio?<span aria-hidden="true">+</span></summary><p>No. El registro de interés es un paso previo, sin pago ni compromiso de contratar. Los planes de suscripción, precios y condiciones se comunicarán antes de abrir las inscripciones.</p></details></div></div></section>
+    <section id="sumate" class="section signup"><div class="container signup-layout"><div><p class="eyebrow">TU NEGOCIO PUEDE SER PARTE</p><h2>Lo que viene<br>también puede<br><em>empezar con vos.</em></h2><p>Dejá tu interés en ser parte de CRvende. Cuando abramos el registro, queremos que los comercios de aquí sean los primeros en enterarse.</p><div class="signup-points"><span>Sin pago ni compromiso.</span><span>Para comercios de todo el país.</span></div></div><div class="signup-box"><form id="interest-form" action="https://formspree.io/f/xnppdlko" method="post"><input type="hidden" name="_subject" value="Nuevo interesado en CRvende"><input type="hidden" name="origen" value="Landing CRvende"><div class="sr-only" aria-hidden="true"><label for="website-field">Dejá este campo vacío</label><input id="website-field" type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div><label for="interest">Me interesa…</label><select id="interest" name="interest"><option value="negocio">Registrar mi negocio cuando esté disponible</option><option value="descubrir">Descubrir comercios y seguir las novedades</option></select><div id="business-fields"><label for="business">Nombre de tu negocio</label><input id="business" name="business" autocomplete="organization" placeholder="¿Cómo se llama tu local?" required maxlength="120"><label for="province">Provincia de tu local</label><select id="province" name="province" required><option value="">Elegí una provincia</option><option>San José</option><option>Alajuela</option><option>Cartago</option><option>Heredia</option><option>Guanacaste</option><option>Puntarenas</option><option>Limón</option></select><label for="district">Distrito de tu local</label><input id="district" name="district" placeholder="Escribí el distrito donde está tu local" required maxlength="100"></div><label for="email">Tu correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" placeholder="vos@ejemplo.com" required maxlength="254" aria-describedby="form-note"><label class="consent-label" for="consent"><input id="consent" type="checkbox" name="consentimiento" value="Acepto recibir novedades de CRvende sobre su lanzamiento e inscripción" required><span>Acepto que CRvende utilice estos datos para contactarme sobre el lanzamiento y la inscripción.</span></label><button class="privacy-trigger form-privacy" type="button">Leer aviso de privacidad</button><button class="button" type="submit">Registrar mi interés <span aria-hidden="true">↗</span></button><p id="form-note" class="form-note">Tu registro será procesado por Formspree y enviado al equipo de CRvende. Anotarte no implica pagos ni una inscripción definitiva.</p><p id="form-status" class="form-status" role="status"></p></form></div></div></section>
+  </main>
+  <footer><div class="container footer-top"><a class="brand" href="#inicio" aria-label="Volver al inicio de CRvende"><img src="assets/brand/crvende-logo.png" alt="CRvende" width="2172" height="724" loading="lazy"></a><p>Lo bueno está cerca.<br><span>Un proyecto para el comercio de Costa Rica.</span></p><a class="back-top" href="#inicio">Volver arriba <span aria-hidden="true">↑</span></a></div><div class="container footer-bottom"><span>© <span id="year">2026</span> CRvende</span><span>Más próximamente - Costa Rica</span><button class="privacy-trigger" type="button">Privacidad</button></div></footer>
+  <dialog id="directions-dialog" aria-labelledby="directions-title" aria-describedby="directions-description"><div class="dialog-content"><button class="dialog-close" type="button" data-close-directions aria-label="Cerrar ejemplo de ubicación">×</button><p class="eyebrow">VISTA CONCEPTUAL</p><h2 id="directions-title">Cómo llegar</h2><p id="directions-business" class="directions-business"></p><p id="directions-description">En CRvende, esta acción te ayudará a encontrar la ruta hasta el comercio. Este negocio es ficticio y no tiene una dirección real.</p><button class="button" type="button" data-close-directions>Volver a la muestra</button></div></dialog>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title"><div class="dialog-content"><button class="dialog-close" type="button" aria-label="Cerrar privacidad">×</button><p class="eyebrow">TUS DATOS</p><h2 id="privacy-title">Privacidad</h2><p>CRvende utiliza tu correo electrónico y tu tipo de interés para contactarte sobre el lanzamiento y la inscripción. Si representás a un comercio, también recibimos el nombre del negocio, su provincia y su distrito. El registro no implica pagos ni contratación.</p><p>Al enviar el formulario, los datos se transmiten a Formspree para procesar el registro y notificar al equipo de CRvende. No guardamos las nuevas solicitudes en el almacenamiento local del navegador. Podés solicitar la eliminación de tus datos o dejar de recibir novedades escribiendo a <a href="mailto:crvende1@gmail.com">crvende1@gmail.com</a>. Consultá también la <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">política de privacidad de Formspree</a>.</p></div></dialog>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
