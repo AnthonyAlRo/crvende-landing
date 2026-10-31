@@ -27,6 +27,7 @@ const form = document.querySelector('#interest-form');
 const status = document.querySelector('#form-status');
 const businessFields = document.querySelector('#business-fields');
 const submitButton = form.querySelector('[type="submit"]');
+const syncLocationFields = initLocationFields(form);
 let submitting = false;
 function syncBusinessFields() {
   const business = form.elements.interest.value === 'negocio';
@@ -35,6 +36,7 @@ function syncBusinessFields() {
     input.required = business;
     input.disabled = !business;
   }
+  syncLocationFields();
 }
 form.elements.interest.addEventListener('change', syncBusinessFields);
 syncBusinessFields();
@@ -82,30 +84,6 @@ form.addEventListener('submit', async event => {
   }
 });
 
-const profileTabs = [...document.querySelectorAll('.profile-tabs [role="tab"]')];
-function activateProfileTab(tab, focus = false) {
-  profileTabs.forEach(item => {
-    const active = item === tab;
-    item.setAttribute('aria-selected', String(active));
-    item.tabIndex = active ? 0 : -1;
-    document.getElementById(item.getAttribute('aria-controls')).hidden = !active;
-  });
-  if (focus) tab.focus();
-}
-profileTabs.forEach((tab, index) => {
-  tab.addEventListener('click', () => activateProfileTab(tab));
-  tab.addEventListener('keydown', event => {
-    let next;
-    if (event.key === 'ArrowRight') next = (index + 1) % profileTabs.length;
-    if (event.key === 'ArrowLeft') next = (index - 1 + profileTabs.length) % profileTabs.length;
-    if (event.key === 'Home') next = 0;
-    if (event.key === 'End') next = profileTabs.length - 1;
-    if (next !== undefined) {
-      event.preventDefault();
-      activateProfileTab(profileTabs[next], true);
-    }
-  });
-});
 const privacyDialog = document.querySelector('#privacy-dialog');
 document.querySelectorAll('.privacy-trigger').forEach(button => button.addEventListener('click', () => privacyDialog.showModal()));
 privacyDialog.querySelector('.dialog-close').addEventListener('click', () => privacyDialog.close());

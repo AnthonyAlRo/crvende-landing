@@ -1,0 +1,188 @@
+/* Escala compartida por función. Modificar aquí, no por sección. */
+:root {
+  --text-display: clamp(48px, 5.2vw, 68px);
+  --text-section: clamp(36px, 4vw, 50px);
+  --text-dialog: 32px;
+  --text-subheading: 24px;
+  --text-card-title: 16px;
+  --text-body: 16px;
+  --text-ui: 14px;
+  --text-caption: 12px;
+  --text-label: 11px;
+  --weight-heading: 750;
+  --weight-control: 650;
+  --weight-label: 700;
+  --leading-body: 1.75;
+  --leading-heading: 1.2;
+  --tracking-heading: -.035em;
+  --tracking-label: .12em;
+  --space-label: 20px;
+  --space-heading: 24px;
+  --action: #007f78;
+  --action-hover: #006e68;
+}
+
+/* Una única escala para los títulos de sección y subtítulos. */
+.hero-copy h1 {
+  font: var(--weight-heading) var(--text-display)/1.07 var(--heading);
+  letter-spacing: -.045em;
+  margin-block: 20px 24px;
+}
+.section h2, .signup h2, .launch-panel h2 {
+  font: var(--weight-heading) var(--text-section)/1.12 var(--heading);
+  letter-spacing: var(--tracking-heading);
+  margin-block: 0 var(--space-heading);
+}
+.section-heading h2, .journey-intro h2 { margin-bottom: 0; }
+.dialog-content h2 {
+  font: var(--weight-heading) var(--text-dialog)/1.2 var(--heading);
+  letter-spacing: var(--tracking-heading);
+}
+.business-benefits h3, .steps h3, .visitor-steps h3 {
+  font: var(--weight-heading) var(--text-subheading)/var(--leading-heading) var(--heading);
+  letter-spacing: -.025em;
+  margin-block: 16px 12px;
+}
+.steps h3 { margin-top: 0; }
+
+/* Etiquetas sobre títulos: misma familia, peso, tamaño y separación. */
+.eyebrow, .hero-copy .eyebrow, .benefit-index,
+.demo-tag, .sample-post div>span, .catalog-heading small, .national-tag {
+  font: var(--weight-label) var(--text-label)/1.6 var(--font);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+.eyebrow, .hero-copy .eyebrow { margin-block: 0 var(--space-label); }
+
+/* Texto de lectura, sin variaciones arbitrarias entre secciones. */
+.hero-description, .section-heading>p, .business-benefits p,
+.national-note p, .preview-copy>p:not(.eyebrow),
+.how-intro>p:not(.eyebrow), .steps p,
+.journey-intro>p, .visitor-steps .step-description,
+.launch-panel>div>p:not(.eyebrow), .faq details p,
+.signup-layout>div>p:not(.eyebrow), .dialog-content p:not(.eyebrow) {
+  font: 400 var(--text-body)/var(--leading-body) var(--font);
+  letter-spacing: normal;
+}
+.national-note strong { font-weight: var(--weight-control); }
+.preview-copy .merchant-benefits, .signup-points {
+  font: 400 var(--text-ui)/var(--leading-body) var(--font);
+  letter-spacing: normal;
+}
+.merchant-benefits li { margin-block: 12px; }
+
+/* Textos auxiliares y aclaraciones de igual importancia. */
+.preview-copy>p.preview-footnote, .hero-copy .launch-note,
+.catalog-caption, .profile-disclaimer, .profile-browser p,
+.profile-primary-action>span, .hero-bottom,
+.form-note, .form-status, .signup .consent-label,
+.footer-bottom, .footer-top p span, .journey-disclaimer,
+.journey-look-caption span, .route-origin, .route-destination,
+.preview-style-label, .profile-browser .preview-hint, .preview-style-status,
+.public-preview-toolbar {
+  font: 400 var(--text-caption)/var(--leading-body) var(--font);
+  letter-spacing: normal;
+}
+.preview-copy>p.preview-footnote { margin-block: 24px; }
+.catalog-heading>span, .footer-top p {
+  font: var(--weight-control) var(--text-ui)/1.6 var(--font);
+  letter-spacing: normal;
+}
+
+/* Títulos y texto dentro de las muestras: escala compacta compartida. */
+.business-card-header h3, .catalog-mini .business-card-header h3,
+.profile-panel .demo-panel-title, .sample-post h4, .journey-business-info h4,
+.merchant-features h3 {
+  font: var(--weight-heading) var(--text-card-title)/1.4 var(--heading);
+  letter-spacing: -.025em;
+}
+.business-card-header h3, .catalog-mini .business-card-header h3 { margin-block: 0 4px; }
+.profile-identity h3 {
+  font: var(--weight-heading) var(--text-subheading)/var(--leading-heading) var(--heading);
+  letter-spacing: -.025em;
+}
+.profile-identity p, .profile-panel>p, .sample-post p,
+.demo-visit li, .demo-visit strong, .profile-cover>span,
+.journey-business-info p, .journey-directions>p, .merchant-features p {
+  font: 400 var(--text-ui)/var(--leading-body) var(--font);
+  letter-spacing: normal;
+}
+.profile-panel .demo-panel-title { font-weight: var(--weight-heading); }
+.demo-visit strong, .profile-cover>span { font-weight: var(--weight-control); }
+.business-card-header p, .catalog-mini .business-card-header p,
+.catalog-feature-info>p, .profile-info-chips span,
+.demo-photo-grid figcaption, .demo-visit small {
+  font: 400 var(--text-caption)/1.6 var(--font);
+  letter-spacing: normal;
+}
+
+/* Controles y enlaces: tipografía uniforme y objetivos táctiles amplios. */
+.button, .button-small, .hero .button,
+.directions-button, .profile-primary-action .directions-button,
+.catalog-mini .directions-button, .text-link, .launch-date .text-link,
+.nav nav>a:not(.button), .profile-tabs button,
+.back-top, .privacy-trigger, .signup .form-privacy, .preview-style-button {
+  font: var(--weight-control) var(--text-ui)/1.4 var(--font);
+  letter-spacing: normal;
+  min-height: 44px;
+}
+.button, .directions-button { background: var(--action); }
+.button:hover, .directions-button:hover { background: var(--action-hover); }
+.button-small { padding-block: 12px; }
+.text-link, .back-top, .privacy-trigger, .signup .form-privacy,
+.nav nav>a:not(.button) { display: inline-flex; align-items: center; }
+.profile-tabs button { padding-block: 12px; }
+.privacy-trigger, .signup .form-privacy { text-decoration: underline; text-underline-offset: 3px; }
+.signup .form-privacy { margin-block: 0 16px; }
+.faq summary {
+  font: var(--weight-control) var(--text-body)/1.6 var(--font);
+  min-height: 60px;
+}
+.signup label {
+  font: var(--weight-control) var(--text-ui)/1.6 var(--font);
+  margin-bottom: 8px;
+}
+.signup input, .signup select {
+  font: 400 16px/1.5 var(--font);
+  min-height: 48px;
+}
+.signup select:disabled {
+  color: var(--muted);
+  background: #e8edeb;
+  cursor: not-allowed;
+  opacity: 1;
+}
+.signup .consent-label { min-height: 44px; align-items: flex-start; }
+.signup .consent-label input { min-height: 0; }
+.dialog-close { width: 44px; height: 44px; display: grid; place-items: center; }
+.text-link:hover, .back-top:hover, .nav nav>a:not(.button):hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Móvil: cambia la escala completa, no el tamaño de cada sección por separado. */
+@media(max-width:480px) {
+  :root {
+    --text-display: 48px;
+    --text-section: 36px;
+    --text-dialog: 30px;
+    --text-subheading: 22px;
+    --text-card-title: 14px;
+    --text-body: 15px;
+    --text-ui: 13px;
+    --text-label: 10px;
+    --space-label: 16px;
+    --space-heading: 20px;
+  }
+  .catalog-mini-grid { grid-template-columns: 1fr; }
+  .catalog-mini .business-card-header { min-height: auto; align-items: center; }
+  .catalog-mini>img { height: 150px; }
+  .catalog-mini .business-avatar { width: 30px; height: 30px; font-size: 10px; }
+  .catalog-mini .mini-directions { padding: 10px; }
+  .catalog-heading { gap: 12px; flex-wrap: wrap; }
+  .profile-tabs { gap: 10px; padding-inline: 12px; }
+  .profile-tabs button { min-width: 0; white-space: normal; }
+  .profile-primary-action>span { flex-basis: 100%; }
+  .national-tag { white-space: normal; }
+  .how-intro h2 { max-width: none; }
+}
