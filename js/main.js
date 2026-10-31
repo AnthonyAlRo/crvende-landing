@@ -79,7 +79,7 @@ form.addEventListener('submit', async event => {
   } finally {
     submitting = false;
     submitButton.disabled = false;
-    submitButton.innerHTML = 'Registrar mi interés <span aria-hidden="true">↗</span>';
+    submitButton.innerHTML = 'Enviar mi interés <span aria-hidden="true">↗</span>';
     form.setAttribute('aria-busy', 'false');
   }
 });
